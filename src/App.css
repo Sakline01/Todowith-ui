@@ -1,0 +1,58 @@
+body{
+  background: #cecece;
+}
+.App {
+  margin: 50px;
+  text-align: center;
+  
+}
+.show{
+  width: 45%;
+  margin: auto;
+  
+}
+.show>div{
+  display: flex;
+  flex-basis: 50%;
+  height: 140px;  
+  background: #fefefe;
+  margin-bottom: 10px; 
+  align-items: center;
+  border-radius: 7%;
+}
+.show>div>div{
+  width: 50%;
+}
+.show>div>div>h2{
+  font-size: 40px;
+  font-weight: 400;
+}
+.show>div>div>button{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.show>div>div>button:nth-child(1){
+  margin-right: 10px;
+}
+.green{
+  border: green solid 9px;
+}
+.red{
+  border: red solid 9px;
+}
+input{
+  height: 48px;
+  width: 350px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 7px;
+}
+.add{
+  height: 48px;
+  width: 48px;
+  font-size: 25px;
+  border-style: none;
+  border-radius: 7px;
+  background: #fefefe;
+}
