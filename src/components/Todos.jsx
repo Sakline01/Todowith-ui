@@ -36,16 +36,17 @@ const Todos = ({ key }) => {
   return (
     <>
       <Input onTaskCreate={handleTaskCreate} />
-      {isComplete ? todo.filter((item) => item.complete === true).map((item) => (
-        <>
-          <Show handleComplete={handleComplete} check={item.complete} handleDelete={handleDelete} handleToggle={handleToggle} key={item.id} id={item.id} title={item.title} status={item.status} />
-        </>
-      )) : todo.filter((item) => item.complete !== true).map((item) => (
+      {todo.filter((item) => item.complete !== true).map((item) => (
         <>
           <Show handleComplete={handleComplete} check={item.complete} handleDelete={handleDelete} handleToggle={handleToggle} key={item.id} id={item.id} title={item.title} status={item.status} />
         </>
       ))}
-      {todo.length ? isComplete ? <button onClick={handleComplete2}>Show Not Completed</button> : <button onClick={handleComplete2}>Show Completed</button> : null}
+      {todo.length ? isComplete ? <button style={{ marginBottom: "15px" }} onClick={handleComplete2}>Hide Completed</button> : <button onClick={handleComplete2}>Show Completed</button> : null}
+      {isComplete ? todo.filter((item) => item.complete === true).map((item) => (
+        <>
+          <Show handleComplete={handleComplete} check={item.complete} handleDelete={handleDelete} handleToggle={handleToggle} key={item.id} id={item.id} title={item.title} status={item.status} />
+        </>
+      )) : null}
     </>
   );
 };

@@ -1,3 +1,11 @@
 .align{
     align-items: center;
 }
+.line{
+    text-decoration: line-through;
+}
+.textt{
+  margin-left: 5px;
+  font-size: 2rem;
+  font-weight: 400;
+}
