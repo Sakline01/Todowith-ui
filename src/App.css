@@ -18,13 +18,22 @@ body{
   background: #fefefe;
   margin-bottom: 10px; 
   align-items: center;
-  border-radius: 7%;
+  border-radius: 30px;
 }
 .show>div>div{
   width: 50%;
 }
+.show>div>div:nth-child(1){
+  display: flex;
+  align-items: center;
+}
+.show>div>div>input{
+  width: 30px;
+  height: 30px;
+}
 .show>div>div>h2{
-  font-size: 40px;
+  margin-left: 5px;
+  font-size: 2rem;
   font-weight: 400;
 }
 .show>div>div>button{
